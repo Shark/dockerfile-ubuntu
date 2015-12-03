@@ -2,4 +2,4 @@
 for init in /config/init*; do
 	bash "$init"
 done
-exec supervisord -n
+exec supervisord -n -c /etc/supervisor/supervisord.conf
