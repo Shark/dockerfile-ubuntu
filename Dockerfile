@@ -3,6 +3,7 @@ MAINTAINER Felix Seidel <felix@seidel.me>
 
 ENV DEBIAN_FRONTEND noninteractive
 ADD config /config
+ADD root /root
 
 RUN apt-get update && \
     apt-get upgrade -y && \
