@@ -7,7 +7,7 @@ ADD root /root
 
 RUN apt-get update && \
     apt-get upgrade -y && \
-    apt-get install -y nano supervisor && \
+    apt-get install -y nano supervisor wget ca-certificates && \
     apt-get clean && rm -rf /var/lib/apt/lists/* && \
     dpkg-divert --local --rename /etc/supervisor/supervisor.conf && \
     mkdir -p /config /data && \
